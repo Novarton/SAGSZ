@@ -4,42 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./CSS/index.css">
-  
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
   <title>Login</title>
 </head>
 <body>
   <main>
-    <div class="login">
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Iniciar Sesión</h5>
-          <form>
-            <div class="col-12">
-              <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
-              <div class="input-group">
-                <div class="input-group-text"><img src="/node_modules/bootstrap-icons/icons/person-circle.svg" alt=""></div>
-                <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+    <div class="container">
+      <div class="columns">
+        <div class="column col-6">
+          <div class="login">
+            <form action="" class="form-horizontal">
+              <label for="email" class="form-label">Email</label>
+              <div class="has-icon-left">
+                <input type="text" class="form-input" placeholder="Email" id="email" required>
+                <i class="form-icon icon icon-people"></i>
               </div>
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
-              <div class="input-group">
-                <div class="input-group-text"><img src="/node_modules/bootstrap-icons/icons/lock.svg" alt=""></div>
-                <input type="text" class="form-control" id="inlineFormInputGroupPassword" placeholder="Password">
+              <label for="password" class="form-label">Contraseña</label>
+              <div class="has-icon-left">
+                <input type="password" class="form-input" placeholder="Contraseña" id="password" required>
+                <i class="form-icon icon icon-edit"></i>
               </div>
-            </div>
-            <a href="./HTML/inicio.html" class="btn btn-success">Ingresar</a>
-            <!--
-            <button type="submit" class="btn btn-success">Ingresar</button>
-            -->
-          </form>
+              <br>
+              <button type="submit" class="btn btn-primary">Ingresar</button>
+            </form>
+          </div>
+        </div>
+        <div class="column col-6">
+          <img src="./IMG/logo.jpeg" alt="" class="img-responsive">
         </div>
       </div>
-    </div>
-
-    <div class="container">
     </div>
   </main>
 </body>
